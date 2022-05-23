@@ -2,16 +2,28 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    background-color: #121213;
 }
 
-.logo_content{
+.header_logo{
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
-.header_logo{
+.header_logo > h2{
+    font-size: 20px;
+    color: grey;
+}
+.logo{
     height: 40px;
     width: 40px;
+}
+
+.header_search{
+
+}
+
+.header_button{
 }

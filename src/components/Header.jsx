@@ -1,16 +1,19 @@
 import logo from "../assets/images/logo.png";
 import "./Header.scss";
+import SearchIcon from "@mui/icons-material/Search";
 
 const Header = () => {
   return (
     <div className="Header">
-      <div className="logo_content">
-        <img src={logo} alt="company logo" className="header_logo" />
-        <h2>website name</h2>
+      <div className="header_logo">
+        <h2>EbeNFT CMS</h2>
       </div>
 
-      <input label="search" placeholder="Search" />
-      <button>Search</button>
+      <div className="header_search">
+        <SearchIcon />
+        <input label="search" placeholder="Search" />
+      </div>
+      <button className="header_button">Search</button>
     </div>
   );
 };
