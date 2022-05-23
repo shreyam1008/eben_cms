@@ -1,6 +1,8 @@
 import logo from "../assets/images/logo.png";
 import "./Header.scss";
 import SearchIcon from "@mui/icons-material/Search";
+import { Button, InputAdornment, TextField } from "@mui/material";
+import { AccountCircle } from "@mui/icons-material";
 
 const Header = () => {
   return (
@@ -10,10 +12,27 @@ const Header = () => {
       </div>
 
       <div className="header_search">
+        {/* <TextField
+          id="input-with-icon-textfield"
+          placeholder="Search"
+          InputProps={{
+            startAdornment: (
+              <InputAdornment position="start">
+                <SearchIcon />
+              </InputAdornment>
+            ),
+          }}
+          variant="standard"
+        /> */}
         <SearchIcon />
         <input label="search" placeholder="Search" />
       </div>
-      <button className="header_button">Search</button>
+
+      <div className="header_button">
+        <Button variant="contained" className="submit_button">
+          Search
+        </Button>
+      </div>
     </div>
   );
 };

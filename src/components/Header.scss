@@ -24,8 +24,25 @@
 }
 
 .header_search{
+    display: flex;
+    align-items: center;
+    color: grey;
+    background-color: #eaedf3;
+    border-radius: 3px;
+    padding: 3px;
+    width: 30%;
 
 }
+.header_search > input {
+    background: transparent;
+    outline-width: 0;
+    color: black;
+    border: none;
+  }
+  
 
 .header_button{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
 }
