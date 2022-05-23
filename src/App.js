@@ -1,9 +1,13 @@
 import "./App.scss";
 
+import Header from "./components/Header";
+import Form from "./components/Form";
+
 function App() {
   return (
     <div className="App">
-      <h1>EBEN_CMS</h1>
+      <Header />
+      <Form />
     </div>
   );
 }
